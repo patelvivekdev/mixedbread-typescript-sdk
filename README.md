@@ -110,7 +110,7 @@ a subclass of [FernError](./src/errors/MxbaiApiError.ts)
 will be thrown:
 
 ```ts
-import { MxbaiApiError } from "@mixedbread-ai/sdk";
+import { MixedbreadAIError } from "@mixedbread-ai/sdk";
 
 try {
   await mxbai.embeddings({
@@ -120,7 +120,7 @@ try {
     maxRetries: 3,
   });
 } catch (err) {
-  if (err instanceof MxbaiApiError) {
+  if (err instanceof MixedbreadAIError) {
     console.log(err.statusCode); 
     console.log(err.message);
     console.log(err.body); 
